@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Биоинмед: первый визит. Черновик к встрече</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap">
+<style>
+:root{--ease-out:cubic-bezier(0.23,1,0.32,1)}
+body{margin:0;-webkit-font-smoothing:antialiased;background:#f8fbff}
+::selection{background:#d7e9f7;color:#0a293c}
+a{color:#1977b2;text-underline-offset:3px}a:hover{color:#16658f}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1977b2;outline-offset:3px}
+.press{transition:transform 160ms var(--ease-out),background-color 150ms ease,border-color 150ms ease}
+.press:active{transform:scale(0.97)}
+.tile{transition:transform 200ms var(--ease-out),border-color 150ms ease}
+@media (hover:hover) and (pointer:fine){.btn-primary:hover{background-color:#16658f !important}.btn-ghost:hover{border-color:#1977b2 !important}.tile:hover{transform:translateY(-2px);border-color:#1977b2 !important}}
+@media (prefers-reduced-motion:no-preference){.scan{animation:dc-scan 1600ms cubic-bezier(0.77,0,0.175,1) 300ms both}.cog{transform-box:fill-box;transform-origin:center;animation:dc-pulse 700ms var(--ease-out) 1700ms both}}
+@media (prefers-reduced-motion:reduce){.tile:hover,.press:active{transform:none}.cog{animation:dc-soft 500ms var(--ease-out) 300ms both}}
+@keyframes dc-soft{from{opacity:0.35}to{opacity:1}}
+@media (max-width:600px){.hdr-cta{display:none !important}}
+@keyframes dc-scan{0%{transform:translateY(0);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translateY(410px);opacity:0}}
+@keyframes dc-pulse{0%{transform:scale(1)}45%{transform:scale(1.35)}100%{transform:scale(1)}}
+</style>
+</head>
+<body>
+<div style="font-family: 'Onest', 'Segoe UI', sans-serif; color: #0a293c; background: #f8fbff">
+
+<header style="background: #f8fbff; border-bottom: 1px solid #dce8f5">
+<div style="max-width: 1160px; margin: 0 auto; padding: 12px 24px; box-sizing: border-box; min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 19px; font-weight: 700; letter-spacing: 0.06em; color: #0a293c">БИОИНМЕД</span>
+<span style="font-size: 13px; color: #315774">Хамовники, м. Фрунзенская</span>
+</div>
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+<a href="tel:+74957960336" style="font-size: 16px; font-weight: 500; color: #0a293c; text-decoration: none">+7 (495) 796-03-36</a>
+<a href="#zapis" class="press btn-primary hdr-cta" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; box-sizing: border-box; border-radius: 999px; background: #1977b2; color: #ffffff; font-size: 15px; font-weight: 600; text-decoration: none">Обсудить первый визит</a>
+</div>
+</div>
+</header>
+
+<section style="background: #f8fbff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 64px 24px 80px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<h1 style="margin: 0; font-size: clamp(44px, 5.2vw, 72px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; color: #0a293c; text-wrap: balance">Сначала понять, потом лечить</h1>
+<p style="margin: 0; max-width: 34ch; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.5; color: #17446f">За 20 минут оценим движения на Хабилекте, специалист объяснит результат и предложит дальнейшие шаги. Первый визит: 3&nbsp;500&nbsp;₽.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px">
+<a href="#zapis" class="press btn-primary" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 30px; box-sizing: border-box; border-radius: 999px; background: #1977b2; color: #ffffff; font-size: 17px; font-weight: 600; text-decoration: none">Обсудить первый визит</a>
+<a href="tel:+74957960336" class="press btn-ghost" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; border: 1.5px solid #b8d2e7; color: #0a293c; font-size: 17px; font-weight: 500; text-decoration: none">+7 (495) 796-03-36</a>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 18px; padding: 28px; box-sizing: border-box; border-radius: 20px; background: #0f2749; box-shadow: 0 24px 48px -24px rgba(8, 36, 70, 0.45)">
+<span style="font-size: 14px; font-weight: 600; color: #b8d2e7">3D-оценка на Хабилекте</span>
+<svg class="figure" viewBox="0 0 320 440" role="img" aria-label="Схема: 3D-модель позы с осью тела, линиями плеч и таза, опорой и центром тяжести" style="display: block; width: 100%; max-width: 260px; height: auto; margin: 0 auto">
+<line x1="160" y1="16" x2="160" y2="430" stroke="#315774" stroke-width="1.5" stroke-dasharray="6 6"></line>
+<line x1="94" y1="104" x2="228" y2="104" stroke="#315774" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<line x1="114" y1="240" x2="208" y2="240" stroke="#315774" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<ellipse cx="162" cy="418" rx="74" ry="10" fill="none" stroke="#315774" stroke-width="2"></ellipse>
+<g stroke="#82bee4" stroke-width="3" stroke-linecap="round" fill="none">
+<line x1="160" y1="88" x2="210" y2="110"></line>
+<line x1="210" y1="110" x2="224" y2="182"></line>
+<line x1="224" y1="182" x2="232" y2="250"></line>
+<line x1="160" y1="236" x2="190" y2="244"></line>
+<line x1="190" y1="244" x2="196" y2="330"></line>
+<line x1="196" y1="330" x2="200" y2="410"></line>
+</g>
+<g stroke="#27a7e7" stroke-width="3.5" stroke-linecap="round" fill="none">
+<circle cx="160" cy="52" r="22"></circle>
+<line x1="160" y1="74" x2="160" y2="88"></line>
+<line x1="160" y1="88" x2="112" y2="104"></line>
+<line x1="160" y1="88" x2="160" y2="170"></line>
+<line x1="160" y1="170" x2="160" y2="236"></line>
+<line x1="112" y1="104" x2="98" y2="176"></line>
+<line x1="98" y1="176" x2="90" y2="244"></line>
+<line x1="160" y1="236" x2="132" y2="240"></line>
+<line x1="132" y1="240" x2="128" y2="326"></line>
+<line x1="128" y1="326" x2="124" y2="408"></line>
+</g>
+<g fill="#d7e9f7">
+<circle cx="210" cy="110" r="4.5"></circle>
+<circle cx="224" cy="182" r="4.5"></circle>
+<circle cx="232" cy="250" r="4.5"></circle>
+<circle cx="190" cy="244" r="4.5"></circle>
+<circle cx="196" cy="330" r="4.5"></circle>
+<circle cx="200" cy="410" r="4.5"></circle>
+</g>
+<g fill="#ffffff">
+<circle cx="160" cy="88" r="5"></circle>
+<circle cx="112" cy="104" r="5"></circle>
+<circle cx="160" cy="170" r="5"></circle>
+<circle cx="160" cy="236" r="5"></circle>
+<circle cx="132" cy="240" r="5"></circle>
+<circle cx="98" cy="176" r="5"></circle>
+<circle cx="90" cy="244" r="5"></circle>
+<circle cx="128" cy="326" r="5"></circle>
+<circle cx="124" cy="408" r="5"></circle>
+</g>
+<rect class="scan" x="72" y="14" width="176" height="3" rx="1.5" fill="#27a7e7" opacity="0"></rect>
+<g class="cog">
+<circle cx="164" cy="222" r="10" fill="none" stroke="#e7a63a" stroke-width="2.5"></circle>
+<circle cx="164" cy="222" r="3.5" fill="#e7a63a"></circle>
+</g>
+</svg>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #315774; font-size: 14px; color: #e4f1fa">Походка</span>
+<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #315774; font-size: 14px; color: #e4f1fa">Равновесие</span>
+<span style="padding: 8px 14px; border-radius: 999px; border: 1px solid #315774; font-size: 14px; color: #e4f1fa">Симметрия</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid #315774; font-size: 14px; color: #e4f1fa"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="#e7a63a" stroke-width="2"></circle></svg>Центр тяжести</span>
+</div>
+<span style="font-size: 14px; line-height: 1.5; color: #b8d2e7">Без датчиков на теле. Результат виден сразу, на экране.</span>
+</div>
+<span style="font-size: 13px; line-height: 1.45; color: #315774">Схема показывает, что видно на экране Хабилекта. Перед запуском можно заменить реальным кадром.</span>
+</div>
+</div>
+</section>
+
+<section style="background: #ffffff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c">С чем приходят на первый визит</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #315774">Специалист оценит, как вы стоите, ходите и держите равновесие, и объяснит, что показала оценка.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<a href="#zapis" class="tile" style="flex: 1.5 1 440px; min-height: clamp(220px, 30vw, 340px); display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 32px; box-sizing: border-box; border-radius: 20px; border: 1px solid #1977b2; background: #1977b2; color: #ffffff; text-decoration: none">
+<span style="font-size: clamp(30px, 3.2vw, 42px); line-height: 1.04; font-weight: 700; letter-spacing: -0.025em">Спина и шея</span>
+<span style="max-width: 34ch; font-size: 18px; line-height: 1.5">Скованность, усталость к вечеру, долгие часы за столом</span>
+</a>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px">
+<a href="#zapis" class="tile" style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 28px; box-sizing: border-box; border-radius: 20px; border: 1px solid #d6e4f0; background: #eaf4fc; color: #0a293c; text-decoration: none">
+<span style="font-size: 24px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em">Суставы и колени</span>
+<span style="font-size: 16px; line-height: 1.5; color: #315774">Дискомфорт при ходьбе, на лестнице и в спорте</span>
+</a>
+<a href="#zapis" class="tile" style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 28px; box-sizing: border-box; border-radius: 20px; border: 1px solid #d6e4f0; background: #ffffff; color: #0a293c; text-decoration: none">
+<span style="font-size: 24px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em">Стопы и походка</span>
+<span style="font-size: 16px; line-height: 1.5; color: #315774">Плоскостопие, усталость ног, подбор стелек</span>
+</a>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px">
+<a href="#zapis" class="tile" style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 28px; box-sizing: border-box; border-radius: 20px; border: 1px solid #d6e4f0; background: #ffffff; color: #0a293c; text-decoration: none">
+<span style="font-size: 24px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em">Равновесие и устойчивость</span>
+<span style="font-size: 16px; line-height: 1.5; color: #315774">Устойчивость при ходьбе, риск падений в старшем возрасте</span>
+</a>
+<a href="#zapis" class="tile" style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 28px; box-sizing: border-box; border-radius: 20px; border: 1px solid #d6e4f0; background: #ffffff; color: #0a293c; text-decoration: none">
+<span style="font-size: 24px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em">После травм и операций</span>
+<span style="font-size: 16px; line-height: 1.5; color: #315774">Понять, что уже восстановилось, а что ещё нет</span>
+</a>
+</div>
+<a href="#zapis" class="tile" style="flex: 1.5 1 440px; min-height: clamp(220px, 30vw, 340px); display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 32px; box-sizing: border-box; border-radius: 20px; border: 1px solid #c9dff1; background: #d7e9f7; color: #0a293c; text-decoration: none">
+<span style="font-size: clamp(30px, 3.2vw, 42px); line-height: 1.04; font-weight: 700; letter-spacing: -0.025em">Осанка</span>
+<span style="max-width: 34ch; font-size: 18px; line-height: 1.5; color: #17446f">Сутулость и асимметрия плеч у взрослых и детей</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #f8fbff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 44px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c">Как проходит первый визит</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 24px">
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px solid #0a293c">
+<span style="font-size: 19px; font-weight: 600">Знакомство</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">Специалист расспрашивает, что беспокоит и что вы уже пробовали.</span>
+</div>
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px solid #0a293c">
+<span style="font-size: 19px; font-weight: 600">Оценка движений</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">Вы двигаетесь перед экраном Хабилекта, без датчиков на теле.</span>
+</div>
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px solid #0a293c">
+<span style="font-size: 19px; font-weight: 600">Пояснения</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">Специалист показывает результат в 3D и объясняет его простыми словами.</span>
+</div>
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px solid #0a293c">
+<span style="font-size: 19px; font-weight: 600">Дальнейшие шаги</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">Что рекомендовано сейчас и что потребуется уточнить.</span>
+</div>
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px dashed #1977b2">
+<span style="font-size: 19px; font-weight: 600; color: #16658f">Разбор командой</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">После визита ваш случай обсуждают специалисты разных направлений.</span>
+</div>
+<div style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 2px dashed #1977b2">
+<span style="font-size: 19px; font-weight: 600; color: #16658f">Согласованный план</span>
+<span style="font-size: 15px; line-height: 1.55; color: #315774">Вы получаете план, согласованный командой.</span>
+</div>
+</div>
+<p style="margin: 0; max-width: 60ch; font-size: 20px; line-height: 1.55; color: #17446f">Дальше всё делаем мы: запишем к нужным специалистам в удобное время, напомним о каждом визите, а на контрольной оценке покажем, что изменилось.</p>
+</div>
+</section>
+
+<section style="background: #eaf4fc">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 660px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c; text-wrap: balance">Ваш случай разбирает команда специалистов</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #315774">После первого визита результаты обсуждают специалисты разных направлений и сходятся на одном плане. Главный врач и основатель клиники ведёт практику более 30 лет и специализируется на сложных случаях.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 28px 16px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div aria-hidden="true" style="aspect-ratio: 4 / 5; border-radius: 20px; background: #d7e9f7; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: #1977b2">ИК</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 17px; font-weight: 600; line-height: 1.3">Инна Викторовна Костромина</span>
+<span style="font-size: 14px; line-height: 1.45; color: #315774">Основатель и главный врач</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div aria-hidden="true" style="aspect-ratio: 4 / 5; border-radius: 20px; background: #d7e9f7; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: #1977b2">ЕК</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 17px; font-weight: 600; line-height: 1.3">Елена Александровна Кондратова</span>
+<span style="font-size: 14px; line-height: 1.45; color: #315774">Рефлексотерапевт</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div aria-hidden="true" style="aspect-ratio: 4 / 5; border-radius: 20px; background: #d7e9f7; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: #1977b2">ЛН</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 17px; font-weight: 600; line-height: 1.3">Людмила Сергеевна Нехорошева</span>
+<span style="font-size: 14px; line-height: 1.45; color: #315774">Врач-остеопат, мануальный терапевт, к.&nbsp;м.&nbsp;н.</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div aria-hidden="true" style="aspect-ratio: 4 / 5; border-radius: 20px; background: #d7e9f7; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: #1977b2">ДМ</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 17px; font-weight: 600; line-height: 1.3">Дарья Сергеевна Майорова</span>
+<span style="font-size: 14px; line-height: 1.45; color: #315774">Специалист по реабилитации, инструктор ЛФК</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #f8fbff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 48px 64px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c">Три варианта продолжения</h2>
+<p style="margin: 0; max-width: 44ch; font-size: 18px; line-height: 1.6; color: #315774">После разбора командой вы получаете план и выбираете вариант. Состав и стоимость указаны в плане.</p>
+<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; border: 1px dashed #315774; font-size: 13px; font-weight: 500; color: #315774">Состав уровней на согласовании</span>
+<a href="#zapis" class="press btn-ghost" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 50px; padding: 0 26px; box-sizing: border-box; border-radius: 999px; border: 1.5px solid #b8d2e7; color: #0a293c; font-size: 16px; font-weight: 500; text-decoration: none">Обсудить первый визит</a>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 26px 0; border-top: 1px solid #c9dff1">
+<span style="font-size: 26px; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em">Базовый</span>
+<span style="font-size: 16px; line-height: 1.5; color: #16658f">Самостоятельно, с поддержкой специалиста</span>
+<span style="font-size: 16px; line-height: 1.55; color: #315774">Программа упражнений по результатам оценки, контрольная оценка.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 26px 0; margin-left: clamp(0px, 3vw, 36px); border-top: 1px solid #c9dff1">
+<span style="font-size: 26px; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em">Оптимальный</span>
+<span style="font-size: 16px; line-height: 1.5; color: #16658f">Курс под ваш план</span>
+<span style="font-size: 16px; line-height: 1.55; color: #315774">Процедуры по плану, занятия со специалистом по реабилитации, контрольная оценка.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 26px 0; margin-left: clamp(0px, 6vw, 72px); border-top: 1px solid #c9dff1; border-bottom: 1px solid #c9dff1">
+<span style="font-size: 26px; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em">Максимальный</span>
+<span style="font-size: 16px; line-height: 1.5; color: #16658f">Комплексная программа</span>
+<span style="font-size: 16px; line-height: 1.55; color: #315774">Ведущий врач и несколько специалистов, процедуры и занятия по плану, контрольные оценки по ходу программы.</span>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #ffffff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c">Бонусы за визиты и рекомендации</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #315774">Бонусы копятся на вашей клубной карте Биоинмед, баланс подскажет администратор.</p>
+<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; border: 1px dashed #315774; font-size: 13px; font-weight: 500; color: #315774">Условия на согласовании</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0 56px; border-top: 2px solid #0a293c">
+<div style="flex: 1.2 1 380px; display: flex; flex-direction: column; gap: 12px; padding: 28px 0">
+<span style="font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; color: #0a293c">С каждого оплаченного визита</span>
+<p style="margin: 0; max-width: 46ch; font-size: 17px; line-height: 1.6; color: #315774">5% стоимости возвращаются бонусами. Ими можно оплатить до 20% следующего визита. Бонусы действуют 12 месяцев.</p>
+</div>
+<div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 12px; padding: 28px 0">
+<span style="font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; color: #0a293c">Если вас порекомендовали</span>
+<p style="margin: 0; max-width: 46ch; font-size: 17px; line-height: 1.6; color: #315774">Назовите при записи имя того, кто вас порекомендовал. После вашего первого оплаченного визита бонусы получите вы оба. Рекомендовавшему начисляем их с вашего согласия.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #eaf4fc">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+<h2 style="margin: 0; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -0.025em; color: #0a293c">Форматы на согласовании</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #315774">Решаем на встрече, что из этого появится на странице.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 2 1 420px; display: flex; flex-direction: column; gap: 14px; padding: 32px; box-sizing: border-box; border-radius: 20px; border: 1.5px dashed #82bee4; background: #ffffff">
+<span style="font-size: 28px; line-height: 1.1; font-weight: 700; letter-spacing: -0.02em">Санаторий выходного дня</span>
+<p style="margin: 0; max-width: 52ch; font-size: 17px; line-height: 1.6; color: #315774">Для тех, у кого свободны только выходные. От часа до двух в субботу: индивидуальный комплекс за один визит, несколько процедур под вашу задачу. И остаток выходного свободен.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px; padding: 28px; box-sizing: border-box; border-radius: 20px; border: 1.5px dashed #82bee4; background: #ffffff">
+<span style="font-size: 22px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em">Программы, которые продолжают маршрут</span>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #315774">1-2 программы, связь которых с задачей пациента может объяснить врач. Остальные авторские программы показываем отдельными направлениями клиники.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="zapis" style="background: #0f2749; color: #ffffff">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 36px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; max-width: 640px">
+<h2 style="margin: 0; font-size: clamp(34px, 3.8vw, 50px); line-height: 1.06; font-weight: 700; letter-spacing: -0.025em; color: #ffffff; text-wrap: balance">Обсудим ваш первый визит</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #b8d2e7">Оценка движений на Хабилекте за 20 минут и разбор со специалистом. Первый визит: 3&nbsp;500&nbsp;₽. Оставьте телефон, администратор перезвонит и подберёт время.</p>
+</div>
+<div data-state="form" style="width: 100%; display: flex; justify-content: center">
+<div style="width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: 18px; padding: 32px; box-sizing: border-box; border-radius: 20px; background: #ffffff; color: #0a293c">
+<label for="f-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Имя
+<input id="f-name" type="text" autocomplete="given-name" style="height: 50px; box-sizing: border-box; padding: 0 14px; border-radius: 12px; border: 1px solid #a8cde9; background: #ffffff; font-family: inherit; font-size: 16px; color: #0a293c; caret-color: #1977b2">
+</label>
+<label for="f-phone" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Телефон
+<input id="f-phone" type="tel" autocomplete="tel" placeholder="+7" style="height: 50px; box-sizing: border-box; padding: 0 14px; border-radius: 12px; border: 1px solid #a8cde9; background: #ffffff; font-family: inherit; font-size: 16px; color: #0a293c; caret-color: #1977b2">
+</label>
+<label for="f-topic" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Что беспокоит
+<select id="f-topic" style="height: 50px; box-sizing: border-box; padding: 0 12px; border-radius: 12px; border: 1px solid #a8cde9; background: #ffffff; font-family: inherit; font-size: 16px; color: #0a293c">
+<option>Спина и шея</option>
+<option>Суставы и колени</option>
+<option>Стопы и походка</option>
+<option>Равновесие и устойчивость</option>
+<option>После травм и операций</option>
+<option>Осанка</option>
+<option>Пока не знаю, хочу разобраться</option>
+</select>
+</label>
+<label for="f-ref" style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 500">Кто вас порекомендовал
+<input id="f-ref" type="text" autocomplete="off" style="height: 50px; box-sizing: border-box; padding: 0 14px; border-radius: 12px; border: 1px solid #a8cde9; background: #ffffff; font-family: inherit; font-size: 16px; color: #0a293c; caret-color: #1977b2">
+<span style="font-size: 13px; line-height: 1.45; font-weight: 400; color: #315774">Необязательно. Бонус рекомендовавшему начислим с вашего согласия.</span>
+</label>
+<label for="f-consent" style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.45; color: #315774">
+<input id="f-consent" type="checkbox" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1977b2">
+<span>Согласен на обработку персональных данных по <a href="#zapis">политике конфиденциальности</a></span>
+</label>
+<button type="button" class="press btn-primary" id="send-btn" style="min-height: 54px; border: 0; border-radius: 999px; background: #1977b2; color: #ffffff; font-family: inherit; font-size: 17px; font-weight: 600; cursor: pointer">Жду звонка</button>
+</div>
+</div>
+<div data-state="sent" style="width: 100%; display: none; justify-content: center">
+<div role="status" style="width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: 14px; padding: 32px; box-sizing: border-box; border-radius: 20px; background: #ffffff; color: #0a293c">
+<span style="font-size: 26px; line-height: 1.15; font-weight: 700; letter-spacing: -0.02em">Заявка принята</span>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #315774">Администратор перезвонит в рабочее время, пн-пт с 9:00 до 21:00, и подберёт удобное время визита.</p>
+<button type="button" class="press btn-ghost" id="reset-btn" style="align-self: flex-start; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1.5px solid #b8d2e7; background: #ffffff; color: #0a293c; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Изменить данные</button>
+</div>
+</div>
+<div style="width: 100%; max-width: 760px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px 24px; text-align: center; font-size: 15px; line-height: 1.5; color: #b8d2e7">
+<span>Оболенский пер., 9А, 5 минут пешком от м. Фрунзенская</span>
+<span>Пн-пт, 9:00-21:00</span>
+<a href="tel:+74957960336" style="color: #ffffff; font-size: 17px; font-weight: 600">+7 (495) 796-03-36</a>
+</div>
+</div>
+</section>
+
+<footer style="background: #0a293c; color: #b8d2e7">
+<div style="max-width: 1160px; margin: 0 auto; padding: 44px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: clamp(17px, 1.7vw, 22px); line-height: 1.4; font-weight: 600; color: #ffffff">Имеются противопоказания. Необходима консультация специалиста.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.55">
+<span>ООО «Клиника гомеопатии и биорегуляции „Биоинмед“», ИНН 9704215369, ОГРН 1237700443463</span>
+<span>Лицензия на медицинскую деятельность № Л041-01137-77/01404529 от 30.09.2024</span>
+<span>Москва, Оболенский пер., 9А</span>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var form = document.querySelector('[data-state="form"]');
+  var sent = document.querySelector('[data-state="sent"]');
+  document.getElementById('send-btn').addEventListener('click', function () {
+    form.style.display = 'none';
+    sent.style.display = 'flex';
+  });
+  document.getElementById('reset-btn').addEventListener('click', function () {
+    sent.style.display = 'none';
+    form.style.display = 'flex';
+  });
+})();
+</script>
+</body>
+</html>
